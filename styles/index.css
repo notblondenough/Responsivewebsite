@@ -1,0 +1,135 @@
+/* style rules for section one */
+.sectionone__left--text{
+    font-size: var(--body);
+    font-family: var(--font-2);
+    color: var(--color-white-75);
+}
+
+.sectionone__left--button{
+    align-self: start;
+    margin-top: 10px;
+}
+/* style rules for section two */
+
+.sectiontwo{
+    padding: 40px 0px;
+    display: grid;
+    gap: 30px;
+}
+.sectiontwo__content--text{
+    font-family: var(--font-2);
+    font-size: var(--sub);
+}
+
+.sectiontwo__logo{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.sectiontwo__logo img{
+    justify-self: center;
+    align-self: center;
+}
+
+.sectiontwo__button{
+    justify-self: center;
+}
+
+/* style rules for section three four */
+
+.sectionthree__right--text,.sectionfour__left--text{
+    font-size: var(--body);
+    font-family: var(--font-2);
+    color: var(--color-dark-50);
+}
+
+.sectionthree__right--button,.sectionfour__left--button{
+    margin-top: 10px;
+    align-self: start;
+}
+
+/* style rules for section five */
+
+.sectionfive__content--text{
+    font-family: var(--font-2);
+    font-size: var(--sub);
+}
+
+.sectionfive__cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+[class^="sectionfive__cards--"]{
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-1);
+    border-radius: 5px;
+    padding: 20px 25px;
+    gap: 15px;
+}
+[class^="sectionfive__cards--"] .name {
+    font-family: var(--font-1);
+    font-size: var(--h5);
+    font-weight: bold;
+}
+
+[class^="sectionfive__cards--"] .position {
+    font-family: var(--font-2);
+    color: var(--color-dark-75);
+}
+
+.sectionfive{
+    display: grid;
+    gap: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sectionfive__button{
+    justify-self: center;
+}
+
+@media(max-width:768px){
+    .sectionone__right{
+        order: 0;
+    }
+    .sectionone__left{
+        order:1;
+    }
+    .sectionfour__right{
+        order: 0;
+    }
+    .sectionfour__left{
+        order:1;
+    }
+    .sectiontwo__logo{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 40px;
+    }
+    .sectionfive__cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .footerlinks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media(max-width:568px){
+    .sectiontwo__logo{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 40px;
+    }
+    .sectionfive__cards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
