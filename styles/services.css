@@ -67,6 +67,12 @@
         grid-template-columns: repeat(1,0.7fr);
         justify-content: center;
     }
+    .footerlinks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 }
 @media(max-width:568px){
     .sectionone__cards{
