@@ -46,3 +46,12 @@ input,textarea{
       order: 0;
     }
 }
+
+@media(max-width:768px){
+    .footerlinks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
